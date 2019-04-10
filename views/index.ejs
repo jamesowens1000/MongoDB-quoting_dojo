@@ -17,14 +17,14 @@
                     <span>Your quote:</span>
                     <textarea name="quote"></textarea>
                 </div>
+                <% if(messages.invalid_quote) { %>
+                    <% for (var x of messages.invalid_quote) { %>
+                    <h6><%= x %></h6>
+                    <% } %>
+                <% } %>
                 <div class="row">
                     <input class="add btn" type="submit" value="Add my quote!">
                 </div>
-                <% if(messages.invalid_quote) { %>
-                    <% for (var x of messages.invalid_quote) { %>
-                    <h3><%= x %></h3>
-                    <% } %>
-                <% } %>
             </form>
             <a href="/quotes"><button class="btn skip">Skip to Quotes!</button></a>
         </div>

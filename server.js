@@ -23,8 +23,8 @@ app.use(session({
 }))
 
 var QuoteSchema = new mongoose.Schema({
-    name: {type: String, required: true, minlength: 3},
-    quote: {type: String, required: true, minlength: 3}
+    name: {type: String, required: [true,"Name is required!"], minlength: [3,"Name must be at least 3 characters!"]},
+    quote: {type: String, required: [true,"Quote is required!"], minlength: [3,"Quote must be at least 3 characters!"]}
 }, {timestamps: true});
 mongoose.model('Quote', QuoteSchema);
 var Quote = mongoose.model('Quote');
