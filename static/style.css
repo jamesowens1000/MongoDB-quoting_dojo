@@ -1,0 +1,48 @@
+body{
+    padding: 50px;
+}
+h2{
+    margin-bottom: 25px;
+}
+.blue-box{
+    border: 2px solid blue;
+    border-radius: 15%;
+    min-height: 100px;
+    width: 500px;
+    padding: 25px;
+    text-align: center;
+}
+.row{
+    margin-bottom: 25px;
+    margin-left: 50px;
+}
+span{
+    width: 100px;
+    margin-right: 25px;
+}
+textarea{
+    height: 80px;
+    width: 178px;
+    resize: none;
+}
+.add{
+    background-image: linear-gradient(lightgreen, darkgreen);
+    margin-left: 96px;
+}
+.btn{
+    height: 50px;
+    width: 150px;
+    border-top: none;
+    color: whitesmoke;
+    
+}
+.skip{
+    background-image: linear-gradient(aqua, darkblue);
+}
+.q{
+    color: grey;
+}
+.n{
+    color: blue;
+    margin-left: 30px;
+}
